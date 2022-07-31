@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+:root {
+  --color-primary: #02aed6;
+
+  --color-secondary: #ccecff;
+  --color-success: #40eb87;
+  --color-danger: #f54141;
+  --color-dark: #1a273b;
+  --color-black: #151b27;
+  --color-white: #fff;
+  --color-light: #f0ecf6;
+  --color-gray: #98a4b3;
+
+  --border-radius: 2rem;
+  --card-border-radius: 1rem;
+  --search-padding: 0.5rem 1rem;
+  --btn-padding: 0.5rem 2rem;
+  --card-padding: 1rem;
+
+  --sticky-top-left: 5.5rem;
+  --sticky-top-right: -20rem;
+
+  transition: all 0.3s ease-in-out;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
