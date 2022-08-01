@@ -94,7 +94,7 @@ nav .container {
 nav .container h2 {
   font-size: 1.4rem;
 }
-nav .container .search-box {
+.search-box {
   background-color: var(--color-light);
   padding: var(--search-padding);
   border-radius: var(--border-radius);
@@ -321,4 +321,101 @@ main .container .left {
   color: var(--color-primary);
 }
 
-/**/
+/*=====Right==========*/
+.right {
+  height: max-content;
+  position: sticky;
+  top: 5.5rem;
+}
+.container .right .messages {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+}
+
+.right .messages .heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.right .messages .heading i {
+  font-size: 1.4rem;
+}
+.right .messages .search-box {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.right .messages .category {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.right .messages .category h4 {
+  width: 100%;
+  border-bottom: 3px solid var(--color-light);
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.right .messages .category .active {
+  border-color: var(--color-dark);
+}
+.right .messages .category .primary {
+  color: var(--color-primary);
+}
+.right .messages .message {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.right .messages .message:last-child {
+  margin: 0;
+}
+.right .message .message-body p {
+  font-size: 0.8rem;
+}
+.right .message .message-body .unseen {
+  color: var(--color-dark);
+  font-weight: 600;
+}
+.messages .message .profile-photo {
+  position: relative;
+  overflow: visible;
+}
+.messages .profile-photo img {
+  border-radius: 50%;
+}
+.messages .profile-photo .active {
+  width: 0.7rem;
+  aspect-ratio: 1/1;
+  background-color: var(--color-success);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0;
+  border: 2px solid var(--color-white);
+}
+.right .friend-request .title {
+  color: var(--color-gray);
+  margin: 0.5rem 0;
+}
+.right .request {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-bottom: 0.5rem;
+}
+.right .request .user {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.right .request .active {
+  display: flex;
+  gap: 1rem;
+}
+.right .request button {
+  font-weight: 400;
+}
