@@ -249,3 +249,76 @@ main .container .left {
   z-index: 5;
   text-align: center;
 }
+
+.middle .create-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: var(--border-radius);
+}
+.middle .create-post input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  background-color: transparent;
+  margin-right: 1rem;
+  text-transform: capitalize;
+}
+
+/*======MIDDLE========*/
+.middle .feeds .feed {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius);
+  margin: 1rem 0;
+}
+.middle .feed .head {
+  display: flex;
+  justify-content: space-between;
+}
+.middle .feed .head .user {
+  display: flex;
+  gap: 1rem;
+}
+.middle .feed .head .user-info small {
+  font-size: 0.7rem;
+}
+.middle .feed .image {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  margin: 0.7rem 0;
+}
+.middle .feed .inter-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 0.7rem;
+}
+.middle .feed .liked {
+  display: flex;
+}
+
+.middle .feed .liked span {
+  width: 1.4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-white);
+  margin-left: -0.5rem;
+}
+.middle .feed .liked span:nth-child(1) {
+  margin: 0;
+}
+.middle .feed .liked p {
+  margin-left: 0.5rem;
+}
+.middle .feed .captions .hashtag {
+  color: var(--color-primary);
+}
+
+/**/
